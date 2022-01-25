@@ -5,8 +5,8 @@ window.addEventListener('onEventReceived', function (obj) {
   	const listener = obj.detail.listener;
   	const data = obj.detail.event.data;
     if (listener == "kvstore:update") {
-      	if(data.hasOwnProperty('customwidget.dm_data')) {
-          	set_darkmode(data["customwidget.dm_data"]);
+      	if(data.hasOwnProperty('customWidget.dm_data')) {
+          	set_darkmode(data["customWidget.dm_data"]);
         }
     }
 });
